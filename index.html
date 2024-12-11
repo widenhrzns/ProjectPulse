@@ -3,18 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Актульная занятость</title>
+    <title>Актульная проекты</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/objects.css" />
+    <link rel="stylesheet" href="./styles/./content.css" />
+    <link rel="stylesheet" href="./styles/./footer.css" />
   </head>
   <body>
     <header class="header">
-      <div class="header__logo">ProjectPulse</div>
-      <nav class="menu">
-        <ul>
-          <li><a href="" class="menu__item"></a></li>
-          <li><a href="" class="menu__item"></a></li>
-          <li><a href="" class="menu__item"></a></li>
-        </ul>
-      </nav>
+      <div class="header__wrapper">
+        <div class="header__logo"><a href="./index.html">ProjectPulse</a></div>
+        <button onclick="openMobileMenu()" class="header__mobile-menu-button">
+          <img src="./images/icons/menu_icon.svg" alt="Мобильное меню" />
+        </button>
+        <nav class="menu__wrapper">
+          <button onclick="openMobileMenu()" class="header__mobile-menu-button">
+            <img src="./images/icons/close_icon.svg" alt="Закрыть" />
+          </button>
+          <ul class="menu">
+            <li>
+              <a href="./pages/table.html" class="menu__item"
+                >Актуальные проекты</a
+              >
+            </li>
+            <li>
+              <a href="./pages/form.html" class="menu__item">Добавить проект</a>
+            </li>
+            <li>
+              <a href="./pages/blocks.html" class="menu__item">Занятость</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
+    <main></main>
+    <footer></footer>
+    <script src="./scripts/opener.js"></script>
   </body>
 </html>
