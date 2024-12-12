@@ -6,7 +6,6 @@
 body {
   margin: 0;
   height: 100%;
-  overflow: hidden;
 }
 
 ul,
@@ -28,5 +27,11 @@ h3 {
 }
 
 p {
+  margin: 0;
+}
+
+tr,
+th,
+td {
   margin: 0;
 }

@@ -1,6 +1,4 @@
-const page = {
-  mobileMenu: document.querySelector(".menu__wrapper"),
-};
+"use strict";
 
 function openMobileMenu() {
   const isOpened = page.mobileMenu.classList.value.includes(

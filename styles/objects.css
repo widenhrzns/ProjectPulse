@@ -1,0 +1,42 @@
+/* PROJECTS TABLE */
+.projects__table {
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  width: 100%;
+}
+
+.table__line,
+.table__item,
+.table__title {
+  padding: 20px;
+  text-align: center;
+}
+
+.table__header {
+  background-color: #dbeeff;
+}
+
+.table__line_focus {
+  background-color: #f1f1f1;
+}
+
+.table__item {
+  border-top: 1px solid #357efe;
+  border-bottom: 1px solid #357efe;
+}
+
+@media (max-width: 1000px) {
+  .table__line,
+  .table__item,
+  .table__title {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 860px) {
+  .projects__table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 15px;
+  }
+}
