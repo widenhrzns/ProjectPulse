@@ -1,7 +1,26 @@
 "use strict";
 
-/* UTILS */
-function tableMaker(project) {
+/* FOCUS LINE */
+function lineFocus(line) {
+  const isFocused = line.classList.value.includes("table__line_focus");
+  if (!isFocused) {
+    document
+      .querySelectorAll(".table__line")
+      .forEach((line) => line.classList.remove("table__line_focus"));
+    line.classList.add("table__line_focus");
+    return;
+  }
+  line.classList.remove("table__line_focus");
+}
+
+/* CREATE TABLE */
+function addLines(projects) {
+  for (const project of projects) {
+    lineMaker(project);
+  }
+}
+
+function lineMaker(project) {
   const newLine = document.createElement("tr");
   newLine.classList.add("table__line");
   newLine.setAttribute("onclick", "lineFocus(this)");
@@ -22,6 +41,6 @@ function tableMaker(project) {
 }
 
 /* INIT */
-for (const project of projects) {
-  tableMaker(project);
-}
+(() => {
+  addLines(projects);
+})();
