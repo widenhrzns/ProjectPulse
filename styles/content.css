@@ -4,6 +4,29 @@
   margin: 0 auto;
 }
 
+/* ADD PROJECT FORM */
+.add-project {
+  background-color: #357efe;
+  padding: 30px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* WORKERS FILTER */
+.workers__filter {
+  margin-bottom: 20px;
+}
+
+/* WORKERS CARDS */
+.workers__cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
 @media (max-width: 1000px) {
   .wrapper {
     padding: 40px 24px;
@@ -23,14 +46,4 @@
     border: 3px solid #e6e6e6;
     border-radius: 8px;
   }
-}
-
-/* ADD PROJECT FORM */
-.add-project {
-  background-color: #357efe;
-  padding: 30px;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }

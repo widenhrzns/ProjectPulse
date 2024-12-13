@@ -1,18 +1,5 @@
 "use strict";
 
-/* FOCUS LINE */
-function lineFocus(line) {
-  const isFocused = line.classList.value.includes("table__line_focus");
-  if (!isFocused) {
-    document
-      .querySelectorAll(".table__line")
-      .forEach((line) => line.classList.remove("table__line_focus"));
-    line.classList.add("table__line_focus");
-    return;
-  }
-  line.classList.remove("table__line_focus");
-}
-
 /* CREATE TABLE */
 function addLines(projects) {
   for (const project of projects) {
@@ -38,6 +25,19 @@ function lineMaker(project) {
     newLine.appendChild(newItem);
   }
   page.table.appendChild(newLine);
+}
+
+/* FOCUS LINE */
+function lineFocus(line) {
+  const isFocused = line.classList.value.includes("table__line_focus");
+  if (!isFocused) {
+    document
+      .querySelectorAll(".table__line")
+      .forEach((line) => line.classList.remove("table__line_focus"));
+    line.classList.add("table__line_focus");
+    return;
+  }
+  line.classList.remove("table__line_focus");
 }
 
 /* INIT */

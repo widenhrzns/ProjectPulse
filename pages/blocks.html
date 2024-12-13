@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="../styles/global.css" />
     <link rel="stylesheet" href="../styles/header.css" />
     <link rel="stylesheet" href="../styles/objects.css" />
-    <link rel="stylesheet" href="../styles/./content.css" />
-    <link rel="stylesheet" href="../styles/./footer.css" />
+    <link rel="stylesheet" href="../styles/content.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
   </head>
   <body>
     <header class="header">
@@ -36,16 +36,58 @@
             </li>
             <li>
               <a href="./blocks.html" class="menu__item menu__item_active"
-                >Занятость</a
+                >Исполнители</a
               >
             </li>
           </ul>
         </nav>
       </div>
     </header>
-    <main></main>
+    <main>
+      <div class="wrapper">
+        <section class="workers">
+          <div class="workers__filter">
+            <div class="filter__search">
+              <input
+                class="search"
+                type="text"
+                name="search"
+                id="search"
+                placeholder="Поиск..."
+              />
+              <label for="search" onclick="searchCard()">
+                <img
+                  class="small-icon"
+                  src="../images/icons/search_icon.svg"
+                  alt="Иконка поиска"
+              /></label>
+            </div>
+            <div class="filter__sort">
+              <label>Сортировать по:</label>
+              <input
+                type="radio"
+                name="sortBy"
+                id="busy"
+                value="busy"
+                onchange="sortBy(this)"
+              />
+              <label for="price">Занятости</label>
+              <input
+                type="radio"
+                name="sortBy"
+                id="price"
+                value="price"
+                onchange="sortBy(this)"
+              />
+              <label for="price">Цене</label>
+            </div>
+          </div>
+          <div class="workers__cards"></div>
+        </section>
+      </div>
+    </main>
     <footer></footer>
     <script src="../scripts/data.js"></script>
-    <script src="../scripts/mobileMenuOpener.js"></script>
+    <script src="../scripts/workers.js"></script>
   </body>
 </html>
