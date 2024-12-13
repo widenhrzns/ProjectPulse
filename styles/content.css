@@ -24,3 +24,13 @@
     border-radius: 8px;
   }
 }
+
+/* ADD PROJECT FORM */
+.add-project {
+  background-color: #357efe;
+  padding: 30px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

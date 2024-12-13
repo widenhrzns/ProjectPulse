@@ -41,7 +41,85 @@
         </nav>
       </div>
     </header>
-    <main></main>
+    <main>
+      <div class="wrapper">
+        <section class="add-project">
+          <div class="add-project__title">Добавьте проект</div>
+          <form
+            class="add-project__form"
+            action="https://www.bing.com/search?"
+            name="UserEnter"
+            target="_blank"
+          >
+            <input type="hidden" name="q" value="search" />
+            <div class="form__item">
+              <label for="nameOfProject">Название*</label>
+              <input
+                class="form__input"
+                type="text"
+                name="nameOfProject"
+                id="nameOfProject"
+                placeholder="Введите название проекта"
+                required
+              />
+            </div>
+            <div class="form__item">
+              <label for="dateOfStart">Дата начала*</label>
+              <input
+                class="form__input"
+                type="date"
+                name="dateOfStart"
+                id="dateOfStart"
+                required
+              />
+            </div>
+            <div class="form__item">
+              <label for="days">Длительность*</label>
+              <input
+                class="form__input"
+                type="number"
+                name="days"
+                id="days"
+                min="0"
+                max="365"
+                placeholder="Введите длительность проекта  (дни)"
+                required
+              />
+            </div>
+            <div class="form__item">
+              <label>Статус*</label>
+              <div>
+                <input
+                  class="form__radio_ready"
+                  type="radio"
+                  name="status"
+                  id="ready"
+                  value="ready"
+                  required
+                />
+                <input
+                  class="form__radio_inProgress"
+                  type="radio"
+                  name="status"
+                  id="inProgress"
+                  value="inProgress"
+                  required
+                />
+                <input
+                  class="form__radio_suspend"
+                  type="radio"
+                  name="status"
+                  id="suspend"
+                  value="suspend"
+                  required
+                />
+              </div>
+            </div>
+            <button class="form__button" type="submit">Добавить</button>
+          </form>
+        </section>
+      </div>
+    </main>
     <footer></footer>
     <script src="../scripts/data.js"></script>
     <script src="../scripts/mobileMenuOpener.js"></script>

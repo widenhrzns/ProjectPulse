@@ -25,6 +25,63 @@
   border-bottom: 1px solid #357efe;
 }
 
+/* ADD PROJECT FORM */
+.add-project__title {
+  font-size: 30px;
+  padding: 10px;
+  font-weight: 600;
+  color: #dbeeff;
+}
+
+.add-project__form {
+  border-radius: 20px;
+  background-color: #dbeeff;
+  padding: 20px;
+}
+
+.form__item {
+  margin: 20px 0;
+}
+
+.form__input {
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.form__input::placeholder {
+  font-size: 15px;
+}
+
+.form__radio_ready:checked {
+  accent-color: #48ff00;
+}
+
+.form__radio_inProgress:checked {
+  accent-color: #ffee00;
+}
+
+.form__radio_suspend:checked {
+  accent-color: #ff0000;
+}
+
+.form__item > label {
+  color: #357efe;
+  padding: 5px;
+}
+
+.form__button {
+  border: none;
+  border-radius: 8px;
+  background-color: #357efe;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+}
+
 @media (max-width: 1000px) {
   .table__line,
   .table__item,
@@ -38,5 +95,18 @@
     border-collapse: collapse;
     width: 100%;
     font-size: 15px;
+  }
+  .form__input::placeholder {
+    font-size: 12px;
+  }
+  .add-project__title {
+    font-size: 25px;
+    padding: 10px;
+    font-weight: 600;
+    color: #dbeeff;
+  }
+  .form__item > label {
+    font-size: 12px;
+    padding: 5px;
   }
 }
