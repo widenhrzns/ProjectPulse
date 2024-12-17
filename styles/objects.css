@@ -1,3 +1,27 @@
+/* HERO PAGE */
+.section__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.section__item > img {
+  width: 350px;
+}
+
+.hero__text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.text__title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
 /* PROJECTS TABLE */
 .projects__table {
   border-collapse: separate;
@@ -105,13 +129,10 @@
   padding: 5px 10px;
 }
 
-#search {
+.search {
   border: none;
   border-radius: 8px 0 0 8px;
   border: 2px solid #dbeeff;
-}
-
-#search {
   padding: 10px;
   width: 100%;
 }
@@ -184,7 +205,6 @@
 @media (max-width: 860px) {
   .projects__table {
     border-collapse: collapse;
-    width: 100%;
     font-size: 15px;
   }
   .form__input::placeholder {
@@ -198,5 +218,11 @@
   }
   .form__item > label {
     font-size: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .section__item > img {
+    display: none;
   }
 }

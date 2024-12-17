@@ -19,7 +19,9 @@
   <body>
     <header class="header">
       <div class="header__wrapper">
-        <div class="header__logo"><a href="./index.html">ProjectPulse</a></div>
+        <div id="header__logo" class="header__logo">
+          <a href="./index.html">ProjectPulse</a>
+        </div>
         <button onclick="openMobileMenu()" class="header__mobile-menu-button">
           <img src="./images/icons/menu_icon.svg" alt="Мобильное меню" />
         </button>
@@ -43,12 +45,62 @@
         </nav>
       </div>
     </header>
-    <main></main>
+    <div class="wrapper">
+      <main class="main">
+        <section class="hero">
+          <div class="section__item">
+            <div class="hero__text">
+              <div class="text__title">Добро пожаловать на PROJECTPULSE</div>
+              <div class="text__description">
+                Ваш надежный помощник в управлении проектами
+              </div>
+            </div>
+            <img src="./images/notebook-img.png" alt="Фото ноутбука" />
+          </div>
+        </section>
+        <section class="all-projects">
+          <div class="section__item">
+            <img src="./images/projects.png" alt="Фото проекта" />
+            <div class="hero__text">
+              <div class="text__title">Все проекты</div>
+              <div class="text__description">
+                Просматривайте текущие и завершенные проекты. Легкий доступ к
+                информации о статусе и исполнителях.
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="add-projects">
+          <div class="section__item">
+            <div class="hero__text">
+              <div class="text__title">Добавить проект</div>
+              <div class="text__description">
+                Удобная форма для добавления нового проекта. Заполните основные
+                данные и начните сотрудничество.
+              </div>
+            </div>
+            <img src="./images/add-project.png" alt="Фото добавления проекта" />
+          </div>
+        </section>
+        <section class="search-worker">
+          <div class="section__item">
+            <img src="./images/search.png" alt="Поиск исполнителя" />
+            <div class="hero__text">
+              <div class="text__title">Поиск исполнителя</div>
+              <div class="text__description">
+                Найдите подходящего исполнителя для вашего проекта. Фильтры по
+                навыкам и опыту помогут сделать правильный выбор.
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
     <footer class="footer">
       <div class="footer__wrapper">
         <div class="footer__header">
           <div class="footer__logo">
-            <a href="../index.html">ProjectPulse</a>
+            <a href="#header__logo">ProjectPulse</a>
           </div>
           <div class="footer__description">
             Управляйте проектами легко: отслеживайте задачи, ресурсы и прогресс.
@@ -68,6 +120,7 @@
       </div>
       <div class="saved">© 2024 ProjectPulse. Все права защищены.</div>
     </footer>
+
     <script src="./scripts/data.js"></script>
     <script src="./scripts/mobileMenuOpener.js"></script>
   </body>
