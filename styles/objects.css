@@ -219,6 +219,9 @@
   .form__item > label {
     font-size: 12px;
   }
+  .section__item > img {
+    width: 200px;
+  }
 }
 
 @media (max-width: 600px) {
